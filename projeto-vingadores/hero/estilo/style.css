@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 180px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    
+}
+
+header a:hover {
+    color: red;
+}
+
+.hero {
+    height: 320px;
+    padding-bottom: 24px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 36px;
+}
+
