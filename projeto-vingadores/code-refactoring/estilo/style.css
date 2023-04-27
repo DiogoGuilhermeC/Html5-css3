@@ -9,38 +9,54 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1200px; 
     margin: 0px auto ;
 }
 
 a {
+    padding: 2px 0px;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 .dark-link {
     color: red;
     text-decoration: none;
+    border-bottom: 1px solid red;
 
 }
 
-.dark-link:hover {
+.dark-link:hover, .dark-link:focus {
     color: white;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
 }
 
 header {
-    padding: 8px 24px;
+    padding: 8px 16px;
     background-color: black;
+
+}
+
+header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 13px;
     column-gap: 24px;
 }
 
 header img {
-    width: 180px;
+    width: 120px;
+    
 }
 
 header ul {
@@ -53,14 +69,13 @@ header ul li + li {
 }
 
 header a {
-    color: white;
-    text-decoration: none;
-
-    
+    color: red;
+    border-bottom: 1px solid red;
 }
 
-header a:hover {
-    color: red;
+header a:hover, header a:focus {
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .hero {
@@ -69,7 +84,6 @@ header a:hover {
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center 25%;
-
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -84,7 +98,7 @@ header a:hover {
     padding: 64px 24px 96px;
 }
 
-.gallery > h2 {
+.gallery  h2 {
     margin-bottom: 32px;
     border-left: 4px solid red ;
     padding-left: 8px;
@@ -96,7 +110,7 @@ div.row {
     gap: 24px;
 }
 
-div.row div {
+div.row figure {
     /* flex-grow / flex-shrink / flex-basis */
   flex: 1 1 285px;
 }
@@ -107,9 +121,10 @@ div.row img {
     margin-bottom: 16px;
 }
 
-div.row p {
+ figure > figcaption {
     text-align: center;
     font-weight: bold;
+    font-size: 1.3em;
 }
 
 .history {
@@ -153,12 +168,9 @@ div.row p {
     margin-top: 24px;
 } 
 
-
-
 footer {
     padding: 44px 24px ;
     background-color: black;
     color: white;
-    text-align: center;
 }
 
