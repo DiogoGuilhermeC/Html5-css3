@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+button {
+    background-color: purple;
+    cursor: pointer;
+    color: white;
+    padding: 4px 8px;
+    border: 0px;
+    border-radius: 24PX;
+}
+
+button:hover:not(:disabled)
+,button:focus{
+    background-color: blueviolet;
+    outline: 2px solid blueviolet;
+    outline-offset: 1px;
+}
+
+button:disabled {
+    background-color: lightgray;
+}
+
+button:last-child {
+    margin-left: 8px;
+}
+
+li:first-child { /* primeiro elemento*/
+    background-color: cadetblue;
+}
+
+li:nth-child(2) {
+    background-color: brown;
+}
+
+li:last-child { /* Ultimo elemento*/
+    background-color: aquamarine;
+}
+
+p:nth-child(2){
+    background-color: cyan;
+}
