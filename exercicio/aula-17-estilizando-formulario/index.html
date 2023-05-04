@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Forumlário</title>
+</head>
+<body>
+
+<h1>Cadastro</h1>
+
+<main>
+    
+        <form action="sucesso.html" method="post">
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="off">
+            </div>
+    
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="off">
+            </div>
+
+            <div>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha">
+            </div>
+
+            <div>
+                <label for="icep">Cep</label>
+                <input type="search" name="cep" id="icep" placeholder="99999-999">
+            </div>
+
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" placeholder="(99) 99999-9999">
+            </div>
+
+            <div>
+                <label for="ivaga">Tipo da vaga</label>
+                <select name="vaga" id="ivaga">
+                    <option value="pressencial">Pressencial</option>
+                    <option value="remoto">Remoto</option>
+                    <option value="hibrido">Hibrido</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="skills">Habilidades</label>
+                <select name="skills" id="skills" multiple>
+                    <optgroup label="Front-End">
+                        <option value="html5">HTML5</option>
+                        <option value="css3">CSS3</option>
+                        <option value="javascript">JAVASCRIPT</option>
+                        <option value="java">JAVA</option>
+                    </optgroup>
+
+                    <optgroup label="BackEnd">
+                        <option value="node">NodeJs</option>
+                        <option value="php">PHP</option>
+                        <option value="c#">C#</option>
+                        <option value="phyton">PHYTON</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="ilist">Tecnologia preferida</label>
+                <input type="text" name="list" id="ilist" list="tecnologia">
+                <datalist id="tecnologia">
+                    <option value="html5">HTML5</option>
+                    <option value="css3">CSS3</option>
+                    <option value="javascript">JAVASCRIPT</option>
+                    <option value="java">JAVA</option>
+                    <option value="node">NodeJs</option>
+                    <option value="php">PHP</option>
+                    <option value="c#">C#</option>
+                    <option value="phyton">PHYTON</option>
+                </datalist>
+            </div>
+    
+            <div>
+                <label for="imensagem">mensagem</label>
+                <textarea name="mensagem" id="imensagem" autocomplete="off"></textarea>
+            </div>
+    
+            <input id="sub" type="submit" value="Enviar">
+    
+        </form>
+    
+</main>
+
+
+</body>
+</html>
